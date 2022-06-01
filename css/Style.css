@@ -80,7 +80,7 @@ body {
 
 .partie-exp__hobbies,
 .partie-exp__exp--conteneur{
-    
+  line-height: 1em;
   padding: 2%;
 }
 
@@ -534,7 +534,7 @@ footer a {
 
 footer li {
    margin-left: 30px;
-   
+   line-height: 1em;
 }
 
 @media all and (max-width:1000px){
