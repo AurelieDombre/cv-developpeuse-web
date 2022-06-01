@@ -1,0 +1,554 @@
+
+/* Réserve */
+
+html  {
+   --main-bg-color : rgb(128, 128,128);
+   --body-bg-color:rgb(55,73,118);
+   --bandeau-droit-bg-color : white; 
+   --skill-bar-bg:rgba(17, 17, 17, .3);
+   --skill-html-bg:#ea8564;
+   --skill-css-bg:#55a69f;
+   --skill-jQuery-bg: #99856d;
+   --skill-JS-bg: #c44e45;
+   --skill-XML-bg : #5aa669;
+   --skill-PHP-bg: #5A69A6;
+   --skill-SQL-bg :#23b1db;
+   --texte-color: white;
+   --texte-title-color:rgb(55,73,118);
+
+   --main-font-family: 'Roboto', sans-serif;
+   --title-font-family: 'Audiowide', cursive;
+
+}
+  
+
+
+
+
+/************** Back ***************************/
+
+body {
+   background-color: var(--body-bg-color);
+   font-family: var(--main-font-family);
+}
+
+.conteneur {
+   width: 100%;
+   display: flex;
+   margin: 1rem 1rem 1rem 1rem;
+   font-size: 20px;
+   font-family: var(--main-font-family);
+}
+
+.bandeau {
+   width: 40%;
+   background-color: var(--main-bg-color);
+   color: var(--texte-color);
+   padding-left: 2rem;
+}
+
+.partie-exp {
+   width: 70%;
+   background-color: var(--bandeau-droit-bg-color);
+   padding-left: 2rem;
+   padding-top: 2rem;
+}
+
+.bandeau__infoskills--langage, 
+.bandeau__infoskills--compétence-clé, 
+.bandeau__infoskills--soft-skills,
+.bandeau__infoskills--langue  li {
+   list-style-type: '< > ';
+   line-height: 1.7em;
+}
+
+.partie-exp li  {
+   margin-left: 30px;
+   width: 90%;
+   line-height: 1em;
+   text-align: justify;
+  
+}
+
+.partie-exp li::before  {
+   content: ">";
+   color: var(--texte-title-color);
+   font-size: larger;
+   font-weight: bold;
+  
+}
+
+.partie-exp__hobbies,
+.partie-exp__exp--conteneur{
+    
+  padding: 2%;
+}
+
+
+/******************** Titres **********************/
+
+h1, h2 {
+   font-family: var(--title-font-family);
+   color: var( --texte-title-color);
+   text-align: center;
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+
+h3 {
+   color: var(--texte-color);
+   background-color: var(--texte-title-color);
+   text-align: center;
+   display: block;
+   margin: auto;
+   margin-bottom: 20px;
+   width: 70%;
+   padding: 10px;
+   border-radius: 45%;
+   font-family: var(--title-font-family);
+   
+}
+
+/****************** Bandeau gauche*****************************/
+
+iframe{
+   padding: 2rem;
+   display: block;
+}
+figure img {
+   width: 10rem;
+   height: 15rem;
+   margin: -23% auto;
+   position: fixed;
+}
+
+.github, .linkedin, .twitter, .mail, .tel {
+   width: 36px;
+   height: 36px;
+   position: relative;
+   margin-bottom: -11px;
+}
+
+.bandeau__infoskills__reseau {
+   display: flex;
+   
+}
+
+div .box {
+flex-direction: row;
+align-items: center;
+}
+
+.bandeau__infoskills--social li {
+   display: inline-flex;
+   line-height: 3em; 
+
+}
+
+figure {
+
+margin: 10% auto; 
+width: 10rem;
+height: 11rem;
+border-radius: 50%;
+transform: rotate(-2deg);
+box-shadow: 0 0 20px rgba(0,0,0,0.75);  
+overflow: hidden;   
+}
+
+
+
+.bandeau__infoskills--coord {
+   padding: 0;
+   line-height: 3rem;
+}
+
+
+.bandeau__infoskills--langage ,
+.bandeau__infoskills--compétence-clé,
+.bandeau__infoskills--soft-skills,
+.bandeau__infoskills--langue {
+   padding: 2rem;
+   line-height: 1.5em;
+}
+
+a {
+   text-decoration: none;
+   color: var(--texte-color);
+   line-height: 1.5em;
+}
+
+a:hover {
+   color: var(--texte-title-color);
+   text-shadow: 1px 1px;
+}
+
+.bandeau__infoskills--langage {
+   display: flex;
+   flex-direction: column;
+}
+
+/* ***************Barre de progression****************************** */
+#SkillBox {
+   font-size: 20px;
+   font-family: var(--main-font-family);
+   max-width: 95%;
+   height: auto;
+   margin: 20px 0 0 -36px;
+   padding: 10px;
+}
+
+.SkillBar {
+   width: 90%;
+   height: 50px;
+   position: relative;
+   background: var(--skill-bar-bg);
+   margin: 20px auto;
+}
+
+#Skill-HTML {
+   width: 35%;
+   animation: Animate-HTML 4s;
+   -webkit-animation: Animate-HTML 4s;
+   -moz-animation: Animate-HTML 4s;
+   -o-animation: Animate-HTML 4s;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-html-bg);
+}
+@keyframes Animate-HTML {
+   from {
+   width: 10%;
+}
+to {
+   width: 35%}
+}
+/* @-webkit-keyframes Animate-HTML {
+   from {
+   width: 10px;
+}
+to {
+   width: 45%}
+}@-moz-keyframes Animate-HTML {
+   from {
+   width: 10px;
+}
+to {
+   width: 45%}
+}@-o-keyframes Animate-HTML {
+   from {
+   width: 10px;
+}
+to {
+   width: 45%}
+} */
+
+#Skill-CSS {
+   animation: Animate-CSS 5s;
+   -webkit-animation: Animate-CSS 5s;
+   -moz-animation: Animate-CSS 5s;
+   -o-animation: Animate-CSS 5s;
+   width: 30%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-css-bg);
+}
+@keyframes Animate-CSS {
+   from {
+   width: 10%;
+}
+to {
+   width: 30%}
+}
+/* @-webkit-keyframes Animate-CSS {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-moz-keyframes Animate-CSS {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-o-keyframes Animate-CSS {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+} */
+
+/* #Skill-jQuery {
+   animation: Animate-jQuery 5s;
+   -webkit-animation: Animate-jQuery 5s;
+   -moz-animation: Animate-jQuery 5s;
+   -o-animation: Animate-jQuery 5s;
+   width: 40%;
+   height: 100%;
+   position: absolute;
+   background-color:var(--skill-jQuery-bg);
+}
+@keyframes Animate-jQuery {
+   from {
+   width: 10%;
+}
+to {
+   width: 40%}
+} */
+/* @-webkit-keyframes Animate-jQuery {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-moz-keyframes Animate-jQuery {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-o-keyframes Animate-jQuery {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+} */
+
+#Skill-JS {
+   animation: Animate-JS 4s;
+   -webkit-animation: Animate-JS 4s;
+   -moz-animation: Animate-JS 4s;
+   -o-animation: Animate-JS 4s;
+   width: 35%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-JS-bg);
+}
+@keyframes Animate-JS {
+   from {
+   width: 10%;
+}
+to {
+   width: 35%}
+}
+/* @-webkit-keyframes Animate-JS {
+   from {
+   width: 10px;
+}
+to {
+   width: 35%}
+}@-moz-keyframes Animate-JS {
+   from {
+   width: 10px;
+}
+to {
+   width: 35%}
+}@-o-keyframes Animate-JS {
+   from {
+   width: 10px;
+}
+to {
+   width: 35%}
+} */
+
+/* #Skill-API {
+   animation: Animate-XML 4s;
+   -webkit-animation: Animate-XML 4s;
+   -moz-animation: Animate-XML 4s;
+   -o-animation: Animate-XML 4s;
+   width: 30%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-XML-bg);
+}
+@keyframes Animate-XML {
+   from {
+   width: 10%;
+}
+to {
+   width: 30%}
+} */
+/* @-webkit-keyframes Animate-XML {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-moz-keyframes Animate-XML {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-o-keyframes Animate-XML {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+} */
+
+#Skill-PHP {
+   animation: Animate-PHP 4s;
+   -webkit-animation: Animate-PHP 4s;
+   -moz-animation: Animate-PHP 4s;
+   -o-animation: Animate-PHP 4s;
+   width: 30%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-PHP-bg) ;
+}
+@keyframes Animate-PHP {
+   from {
+   width: 10%;
+}
+to {
+   width: 30%}
+}
+/* @-webkit-keyframes Animate-PHP {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-moz-keyframes Animate-PHP {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+}@-o-keyframes Animate-PHP {
+   from {
+   width: 10px;
+}
+to {
+   width: 40%}
+} */
+
+#Skill-SQL {
+   animation: Animate-SQL 4s;
+   -webkit-animation: Animate-SQL 4s;
+   -moz-animation: Animate-SQL 4s;
+   -o-animation: Animate-SQL 4s;
+   width: 30%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-SQL-bg);
+}
+@keyframes Animate-SQL {
+   from {
+   width: 10%;
+}
+to {
+   width: 30%}
+}
+/* @-webkit-keyframes Animate-SQL {
+   from {
+   width: 10px;
+}
+to {
+   width: 30%}
+}@-moz-keyframes Animate-SQL {
+   from {
+   width: 10px;
+}
+to {
+   width: 30%}
+}@-o-keyframes Animate-SQL {
+   from {
+   width: 10px;
+}
+to {
+   width: 30%}
+
+   
+} */
+
+.Skill-Area {
+   z-index: 1;
+   float: left;
+   //position: absolute;
+   margin-top: 15px;
+   margin-left: 15px;
+   text-shadow: none;
+   color: var(--texte-color);
+   font-family: var (--main-font-family);
+   font-size: 18px;
+}
+
+.PercentText {
+   z-index: 3;
+   position: relative;
+   padding-right: 20px;
+   margin-top: 15px;
+   float: right;
+   text-shadow: none;
+   color: var(--texte-color);
+   font-family: var (--main-font-family);
+   font-size: 18px;
+}
+
+
+
+
+/******************* Bandeau de droite*************************** */
+p {
+   padding: 2rem;
+}
+
+.partie-exp__intro--p {
+   font-style: italic;
+}
+
+time {
+   background-color: rgb(55,73,118);
+   color: white;
+   padding: 10px;
+   border-radius: 45%;
+}
+
+/* Bas de page */
+
+footer {
+   text-decoration: none;
+   color: white;
+   justify-content: center;
+   text-align: justify;
+   width: 100%;
+   background-color:rgb(128, 128,128) ;
+   display: inline-block;
+   margin: 1rem 1rem 1rem 1rem;
+   font-size: 20px;
+   padding: 2rem;
+
+}
+
+footer a {
+   text-decoration: none;
+   color: white;
+   padding: 0.5rem;
+}
+
+footer li {
+   margin-left: 30px;
+   
+}
+
+@media all and (max-width:1000px){
+
+   img {
+      width: 20%;
+      height: auto;
+      min-width: auto;
+   }
+
+   figure {
+      width: 20%;
+      height: auto;
+      min-width: auto;
+   }
+}
+
