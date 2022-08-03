@@ -25,7 +25,7 @@ html  {
 
 
 
-/************** Back ***************************/
+/************** conteneur ***************************/
 
 body {
    background-color: var(--body-bg-color);
@@ -65,7 +65,7 @@ body {
 .partie-exp li  {
    margin-left: 30px;
    width: 90%;
-   line-height: 1em;
+   line-height: 1.3em;
    text-align: justify;
   
 }
@@ -223,25 +223,7 @@ a:hover {
 to {
    width: 35%}
 }
-/* @-webkit-keyframes Animate-HTML {
-   from {
-   width: 10px;
-}
-to {
-   width: 45%}
-}@-moz-keyframes Animate-HTML {
-   from {
-   width: 10px;
-}
-to {
-   width: 45%}
-}@-o-keyframes Animate-HTML {
-   from {
-   width: 10px;
-}
-to {
-   width: 45%}
-} */
+
 
 #Skill-CSS {
    animation: Animate-CSS 5s;
@@ -260,62 +242,8 @@ to {
 to {
    width: 30%}
 }
-/* @-webkit-keyframes Animate-CSS {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-moz-keyframes Animate-CSS {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-o-keyframes Animate-CSS {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-} */
 
-/* #Skill-jQuery {
-   animation: Animate-jQuery 5s;
-   -webkit-animation: Animate-jQuery 5s;
-   -moz-animation: Animate-jQuery 5s;
-   -o-animation: Animate-jQuery 5s;
-   width: 40%;
-   height: 100%;
-   position: absolute;
-   background-color:var(--skill-jQuery-bg);
-}
-@keyframes Animate-jQuery {
-   from {
-   width: 10%;
-}
-to {
-   width: 40%}
-} */
-/* @-webkit-keyframes Animate-jQuery {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-moz-keyframes Animate-jQuery {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-o-keyframes Animate-jQuery {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-} */
+
 
 #Skill-JS {
    animation: Animate-JS 4s;
@@ -334,62 +262,9 @@ to {
 to {
    width: 35%}
 }
-/* @-webkit-keyframes Animate-JS {
-   from {
-   width: 10px;
-}
-to {
-   width: 35%}
-}@-moz-keyframes Animate-JS {
-   from {
-   width: 10px;
-}
-to {
-   width: 35%}
-}@-o-keyframes Animate-JS {
-   from {
-   width: 10px;
-}
-to {
-   width: 35%}
-} */
 
-/* #Skill-API {
-   animation: Animate-XML 4s;
-   -webkit-animation: Animate-XML 4s;
-   -moz-animation: Animate-XML 4s;
-   -o-animation: Animate-XML 4s;
-   width: 30%;
-   height: 100%;
-   position: absolute;
-   background-color: var(--skill-XML-bg);
-}
-@keyframes Animate-XML {
-   from {
-   width: 10%;
-}
-to {
-   width: 30%}
-} */
-/* @-webkit-keyframes Animate-XML {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-moz-keyframes Animate-XML {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-o-keyframes Animate-XML {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-} */
+
+
 
 #Skill-PHP {
    animation: Animate-PHP 4s;
@@ -404,29 +279,11 @@ to {
 @keyframes Animate-PHP {
    from {
    width: 10%;
-}
-to {
-   width: 30%}
-}
-/* @-webkit-keyframes Animate-PHP {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-moz-keyframes Animate-PHP {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-}@-o-keyframes Animate-PHP {
-   from {
-   width: 10px;
-}
-to {
-   width: 40%}
-} */
+   }
+   to {
+      width: 30%}
+   }
+
 
 #Skill-SQL {
    animation: Animate-SQL 4s;
@@ -441,38 +298,18 @@ to {
 @keyframes Animate-SQL {
    from {
    width: 10%;
-}
-to {
-   width: 30%}
-}
-/* @-webkit-keyframes Animate-SQL {
-   from {
-   width: 10px;
-}
-to {
-   width: 30%}
-}@-moz-keyframes Animate-SQL {
-   from {
-   width: 10px;
-}
-to {
-   width: 30%}
-}@-o-keyframes Animate-SQL {
-   from {
-   width: 10px;
-}
-to {
-   width: 30%}
+   }
+   to {
+      width: 30%}
+   }
 
-   
-} */
 
 .Skill-Area {
    z-index: 1;
    float: left;
-   //position: absolute;
+   position: absolute;
    margin-top: 15px;
-   margin-left: 15px;
+   margin-left: 5px;
    text-shadow: none;
    color: var(--texte-color);
    font-family: var (--main-font-family);
@@ -482,7 +319,6 @@ to {
 .PercentText {
    z-index: 3;
    position: relative;
-   padding-right: 20px;
    margin-top: 15px;
    float: right;
    text-shadow: none;
@@ -495,13 +331,23 @@ to {
 
 
 /******************* Bandeau de droite*************************** */
-p {
-   padding: 2rem;
+
+.partie-exp__titres{
+   padding: 1.5rem;
+   font-weight: bold;
+   color : rgb(77, 75, 75);
+   font-style: oblique;
 }
 
 .partie-exp__intro--p {
    font-style: italic;
 }
+
+.partie-exp__intro{
+   padding: 1%;
+   line-height: 1.2em;
+}
+
 
 time {
    background-color: rgb(55,73,118);
