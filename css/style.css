@@ -37,12 +37,17 @@ body {
    font-family: var(--main-font-family);
 }
 
-.bandeau {
+header{
    display: flex;
+   flex-direction: column;
+}
+
+.bandeau {
    width: 40%;
    background-color: var(--main-bg-color);
    color: var(--texte-color);
    padding-left: 2rem;
+   
 }
 
 .partie-exp {
@@ -50,6 +55,7 @@ body {
    background-color: var(--bandeau-droit-bg-color);
    padding-top: 3%;
    padding-bottom: 3%;
+   padding-left: 3%;
 }
 
 .bandeau__infoskills--langage, 
@@ -81,6 +87,11 @@ body {
    padding: 2%;
 }
 
+.conteneur__skillBar{
+   display: flex;
+   flex-direction: column;
+   padding: 0% 0% 0% 15%;
+}
 
 /******************** Titres **********************/
 
@@ -127,7 +138,7 @@ figure img {
 
 .bandeau__infoskills__reseau {
    display: flex;
-   
+   margin-bottom: 5%;
 }
 
 div .box {
@@ -152,21 +163,41 @@ box-shadow: 0 0 20px rgba(0,0,0,0.75);
 overflow: hidden;   
 }
 
+.conteneur__infoskills{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.bandeau__infoskills{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 
 
 .bandeau__infoskills--coord {
-   padding: 0;
+   padding-bottom: 3%;
    line-height: 3rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-
 
 .bandeau__infoskills--langage ,
 .bandeau__infoskills--compétence-clé,
 .bandeau__infoskills--soft-skills,
 .bandeau__infoskills--langue {
    padding: 2rem;
-   line-height: 1.5em;
+   
 }
+
+
+.bandeau__infoskills--soft-skills,
+.bandeau__infoskills--compétence-clé{
+   margin-left: 6%;
+}
+
 
 a {
    text-decoration: none;
@@ -299,6 +330,9 @@ to {
       width: 30%}
    }
 
+.SkillBar img{
+   width: 30%;
+}
 
 .Skill-Area-HTML,
 .Skill-Area-CSS,
@@ -313,15 +347,16 @@ to {
 }
 
 .Skill-Area-CSS img {
-   margin-top: 14%;
+   margin-top: 8%;
+   width: 35%;
 }
 
 .Skill-Area-JS img {
-   margin-top: 10%;
+   margin-top: 7%;
 }
 
 .Skill-Area-PHP img {
-   margin-top: 20%;
+   margin-top: 19%;
 }
 
 .Skill-Area-SQL img {
@@ -374,15 +409,15 @@ footer {
    text-decoration: none;
    color: white;
    justify-content: center;
-   width: 100%;
    background-color:rgb(128, 128,128) ;
    display: flex;
-   /* margin: 1rem 1rem 1rem 1rem; */
+   margin: 1rem 1rem 1rem 1rem;
    font-size: 20px;
    align-items: center;
    line-height: normal;
    margin-bottom: 2%;
    padding: 5% 5%;
+   flex-direction: column;
 
 }
 
