@@ -36,7 +36,9 @@
         align-items: center;
     }
 
-    header{
+    .bandeau__infoskills__reseau{
+        flex-direction: column;
+        align-items: center;
     }
         
     .partie-exp {
