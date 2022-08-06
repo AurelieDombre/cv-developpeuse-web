@@ -1,0 +1,179 @@
+@media screen and (min-width : 300px), (max-width:990px){
+
+    h1, h2{
+        font-size: 20px;
+    }
+
+    figure img {
+        width: 20%;
+        height: auto;
+        min-width: auto;
+    }
+
+    figure {
+        width: 20%;
+        height: auto;
+        min-width: auto;
+    }
+
+    .container-fluid{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .bandeau {
+        background-color: var(--main-bg-color);
+        color: var(--texte-color);
+        padding: 1%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .partie-exp {
+    background-color: var(--bandeau-droit-bg-color);
+    padding-top: 2rem;
+    padding: 1%;
+    width: 100%;
+    }
+
+
+
+    /* ***************Barre de progression****************************** */
+    #SkillBox {
+        font-size: 20px;
+        font-family: var(--main-font-family);
+        max-width: 95%;
+        height: auto;
+        margin: 20px 0 0 -36px;
+        padding: 10px;
+    }
+
+    .SkillBar {
+        width: 80%;
+        height: 50px;
+        position: relative;
+        background: var(--skill-bar-bg);
+        margin: 20px auto;
+    }
+
+    #Skill-HTML {
+        width: 35%;
+        animation: Animate-HTML 4s;
+        -webkit-animation: Animate-HTML 4s;
+        -moz-animation: Animate-HTML 4s;
+        -o-animation: Animate-HTML 4s;
+        height: 100%;
+        position: absolute;
+        background-color: var(--skill-html-bg);
+        }
+        @keyframes Animate-HTML {
+        from {
+        width: 10%;
+        }
+        to {
+        width: 35%
+        }
+    }
+
+
+    #Skill-CSS {
+        animation: Animate-CSS 5s;
+        -webkit-animation: Animate-CSS 5s;
+        -moz-animation: Animate-CSS 5s;
+        -o-animation: Animate-CSS 5s;
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--skill-css-bg);
+        }
+        @keyframes Animate-CSS {
+        from {
+        width: 10%;
+        }
+        to {
+        width: 30%
+        }
+    }
+
+
+
+    #Skill-JS {
+        animation: Animate-JS 4s;
+        -webkit-animation: Animate-JS 4s;
+        -moz-animation: Animate-JS 4s;
+        -o-animation: Animate-JS 4s;
+        width: 35%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--skill-JS-bg);
+        }
+        @keyframes Animate-JS {
+        from {
+        width: 10%;
+        }
+        to {
+        width: 35%
+        }
+    }
+
+
+
+
+    #Skill-PHP {
+        animation: Animate-PHP 4s;
+        -webkit-animation: Animate-PHP 4s;
+        -moz-animation: Animate-PHP 4s;
+        -o-animation: Animate-PHP 4s;
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--skill-PHP-bg) ;
+        }
+        @keyframes Animate-PHP {
+        from {
+        width: 10%;
+        }
+        to {
+            width: 30%
+        }
+    }
+
+
+    #Skill-SQL {
+        animation: Animate-SQL 4s;
+        -webkit-animation: Animate-SQL 4s;
+        -moz-animation: Animate-SQL 4s;
+        -o-animation: Animate-SQL 4s;
+        width: 30%;
+        height: 100%;
+        position: absolute;
+        background-color: var(--skill-SQL-bg);
+        }
+        @keyframes Animate-SQL {
+        from {
+        width: 10%;
+        }
+        to {
+            width: 30%
+        }
+    }
+
+
+    .SkillBar img{
+        width: 40%;
+    }
+
+    .PercentText {
+        z-index: 3;
+        position: relative;
+        margin-top: 15px;
+        float: right;
+        text-shadow: none;
+        color: var(--texte-color);
+        font-family: var (--main-font-family);
+        font-size: 18px;
+    }
+
+
+}

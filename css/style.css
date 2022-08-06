@@ -20,7 +20,6 @@ html  {
    --title-font-family: 'Audiowide', cursive;
 
 }
-  
 
 
 
@@ -32,15 +31,14 @@ body {
    font-family: var(--main-font-family);
 }
 
-.conteneur {
-   width: 100%;
+.container-fluid{
    display: flex;
-   margin: 1rem 1rem 1rem 1rem;
    font-size: 20px;
    font-family: var(--main-font-family);
 }
 
 .bandeau {
+
    width: 40%;
    background-color: var(--main-bg-color);
    color: var(--texte-color);
@@ -67,7 +65,7 @@ body {
    width: 90%;
    line-height: 1.3em;
    text-align: justify;
-  
+
 }
 
 .partie-exp li::before  {
@@ -80,8 +78,7 @@ body {
 
 .partie-exp__hobbies,
 .partie-exp__exp--conteneur{
-    
-  padding: 2%;
+   padding: 2%;
 }
 
 
@@ -304,16 +301,32 @@ to {
    }
 
 
-.Skill-Area {
-   z-index: 1;
-   float: left;
-   position: absolute;
-   margin-top: 15px;
-   margin-left: 5px;
-   text-shadow: none;
-   color: var(--texte-color);
-   font-family: var (--main-font-family);
-   font-size: 18px;
+.Skill-Area-HTML,
+.Skill-Area-CSS,
+.Skill-Area-JS,
+.Skill-Area-PHP,
+.Skill-Area-SQL{
+   margin-left: 4%;
+}
+
+.Skill-Area-HTML img  {
+   margin-top: 2%;
+}
+
+.Skill-Area-CSS img {
+   margin-top: 14%;
+}
+
+.Skill-Area-JS img {
+   margin-top: 10%;
+}
+
+.Skill-Area-PHP img {
+   margin-top: 20%;
+}
+
+.Skill-Area-SQL img {
+   margin-top: 14%;
 }
 
 .PercentText {
@@ -383,18 +396,4 @@ footer li {
    
 }
 
-@media all and (max-width:1000px){
-
-   img {
-      width: 20%;
-      height: auto;
-      min-width: auto;
-   }
-
-   figure {
-      width: 20%;
-      height: auto;
-      min-width: auto;
-   }
-}
 
