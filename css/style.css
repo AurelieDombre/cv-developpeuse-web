@@ -31,14 +31,14 @@ body {
    font-family: var(--main-font-family);
 }
 
-.container-fluid{
+.container{
    display: flex;
    font-size: 20px;
    font-family: var(--main-font-family);
 }
 
 .bandeau {
-
+   display: flex;
    width: 40%;
    background-color: var(--main-bg-color);
    color: var(--texte-color);
@@ -48,8 +48,8 @@ body {
 .partie-exp {
    width: 70%;
    background-color: var(--bandeau-droit-bg-color);
-   padding-left: 2rem;
-   padding-top: 2rem;
+   padding-top: 3%;
+   padding-bottom: 3%;
 }
 
 .bandeau__infoskills--langage, 
@@ -95,9 +95,8 @@ h1, h2 {
 h3 {
    color: var(--texte-color);
    background-color: var(--texte-title-color);
-   text-align: center;
-   display: block;
-   margin: auto;
+   display: flex;
+   justify-content: center;
    margin-bottom: 20px;
    width: 70%;
    padding: 10px;
@@ -375,13 +374,15 @@ footer {
    text-decoration: none;
    color: white;
    justify-content: center;
-   text-align: justify;
    width: 100%;
    background-color:rgb(128, 128,128) ;
-   display: inline-block;
-   margin: 1rem 1rem 1rem 1rem;
+   display: flex;
+   /* margin: 1rem 1rem 1rem 1rem; */
    font-size: 20px;
-   padding: 2rem;
+   align-items: center;
+   line-height: normal;
+   margin-bottom: 2%;
+   padding: 5% 5%;
 
 }
 
