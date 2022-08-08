@@ -334,6 +334,7 @@ to {
 
 .SkillBar img{
    width: 35%;
+   position: relative;
 }
 
 .Skill-Area-HTML,
