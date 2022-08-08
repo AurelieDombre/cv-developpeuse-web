@@ -79,7 +79,7 @@ header{
    color: var(--texte-title-color);
    font-size: larger;
    font-weight: bold;
-  
+
 }
 
 .partie-exp__hobbies,
@@ -279,7 +279,7 @@ to {
    -webkit-animation: Animate-JS 4s;
    -moz-animation: Animate-JS 4s;
    -o-animation: Animate-JS 4s;
-   width: 35%;
+   width: 25%;
    height: 100%;
    position: absolute;
    background-color: var(--skill-JS-bg);
@@ -289,7 +289,7 @@ to {
    width: 10%;
 }
 to {
-   width: 35%}
+   width: 25%}
 }
 
 
