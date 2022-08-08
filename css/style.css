@@ -332,10 +332,10 @@ to {
       width: 30%}
    }
 
-.SkillBar img{
+/* .SkillBar img{
    width: 35%;
    position: relative;
-}
+} */
 
 .Skill-Area-HTML,
 .Skill-Area-CSS,
@@ -345,25 +345,27 @@ to {
    margin-left: 4%;
 }
 
-.Skill-Area-HTML img  {
+.Skill-Area-HTML {
    margin-top: 8%;
+   width: 35%;
 }
 
-.Skill-Area-CSS img {
+.Skill-Area-CSS {
    margin-top: 8%;
    width: 40%;
 }
 
-.Skill-Area-JS img {
+.Skill-Area-JS{
    margin-top: 7%;
+   width: 35%;
 }
 
-.Skill-Area-PHP img {
+.Skill-Area-PHP{
    margin-top: 15%;
-   width: 40%;
+   width: 50%;
 }
 
-.Skill-Area-SQL img {
+.Skill-Area-SQL{
    margin-top: 7%;
    width: 40%;
 }
