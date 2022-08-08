@@ -109,9 +109,9 @@
         margin: 20px auto;
     }
 
-    .SkillBar img{
+    /* .SkillBar img{
         width: 40%;
-    }
+    } */
 
     
     .Skill-Area-HTML,
@@ -124,6 +124,7 @@
 
     .Skill-Area-HTML img  {
         margin-top: 10%;
+        width: 35%;
     }
 
     .Skill-Area-CSS img {
@@ -133,14 +134,17 @@
 
     .Skill-Area-JS img {
         margin-top: 10%;
+        width: 30%;
     }
 
     .Skill-Area-PHP img {
         margin-top: 20%;
+        width: 45%;
     }
 
     .Skill-Area-SQL img {
         margin-top: 14%;
+        width: 40%;
     }
 
     .PercentText {
