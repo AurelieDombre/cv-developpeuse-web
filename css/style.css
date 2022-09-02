@@ -10,7 +10,7 @@ html  {
    --skill-css-bg:#55a69f;
    --skill-jQuery-bg: #99856d;
    --skill-JS-bg: #c44e45;
-   --skill-XML-bg : #5aa669;
+   --skill-SYMFO-bg : #5aa669;
    --skill-PHP-bg: #5A69A6;
    --skill-SQL-bg :#23b1db;
    --texte-color: white;
@@ -292,7 +292,23 @@ to {
    width: 25%}
 }
 
-
+#Skill-SYMFO {
+   animation: Animate-JS 4s;
+   -webkit-animation: Animate-JS 4s;
+   -moz-animation: Animate-JS 4s;
+   -o-animation: Animate-JS 4s;
+   width: 35%;
+   height: 100%;
+   position: absolute;
+   background-color: var(--skill-SYMFO-bg);
+}
+@keyframes Animate-JS {
+   from {
+   width: 10%;
+}
+to {
+   width: 35%}
+}
 
 
 #Skill-PHP {
@@ -340,6 +356,7 @@ to {
 .Skill-Area-HTML,
 .Skill-Area-CSS,
 .Skill-Area-JS,
+.Skill-Area-symfony,
 .Skill-Area-PHP,
 .Skill-Area-SQL{
    margin-left: 4%;
@@ -357,6 +374,11 @@ to {
 
 .Skill-Area-JS{
    margin-top: 13%;
+   width: 35%;
+}
+
+.Skill-Area-symfony{
+   margin-top: 7%;
    width: 35%;
 }
 
