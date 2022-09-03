@@ -194,9 +194,11 @@ overflow: hidden;
    
 }
 
-
-.bandeau__infoskills--soft-skills,
 .bandeau__infoskills--compétence-clé{
+   margin-left: -6%;
+}
+
+.bandeau__infoskills--soft-skills{
    margin-left: 6%;
 }
 
@@ -421,6 +423,7 @@ to {
 
 .partie-exp__intro{
    padding: 1%;
+   margin-bottom: 2%;
    line-height: 1.2em;
 }
 
