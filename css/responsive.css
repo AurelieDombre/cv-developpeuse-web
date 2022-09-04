@@ -11,7 +11,7 @@
 
 
     figure img {
-        width: 20%;
+        width: 120%;
         height: auto;
         min-width: auto;
     }
@@ -204,7 +204,7 @@
         -webkit-animation: Animate-JS 4s;
         -moz-animation: Animate-JS 4s;
         -o-animation: Animate-JS 4s;
-        width: 20%;
+
         height: 100%;
         position: absolute;
         background-color: var(--skill-JS-bg);

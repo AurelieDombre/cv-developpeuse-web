@@ -123,11 +123,14 @@ iframe{
    display: block;
 }
 figure img {
-   width: 10rem;
-   height: 15rem;
-   margin: -23% auto;
-   position: fixed;
+   width: 13rem;
+   height: 18rem;
+   /* margin: -15% auto; */
+   position: relative;
+   top: -25%;
+   left: -11%;
 }
+
 
 .github, .linkedin, .twitter, .mail, .tel {
    width: 36px;
